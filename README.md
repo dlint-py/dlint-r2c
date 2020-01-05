@@ -1,6 +1,6 @@
 # Introduction
 
-An [r2c analyzer](https://docs.r2c.dev/en/latest/) for running Dlint at scale.
+An [r2c analyzer](https://docs.r2c.dev/en/latest/) for running [Dlint](https://github.com/duo-labs/dlint) at scale.
 
 Build, test, and run using [r2c-cli](https://pypi.org/project/r2c-cli/):
 
