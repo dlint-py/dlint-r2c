@@ -1,0 +1,15 @@
+{
+    "analyzer_name": "beta/dlint",
+    "author_name": "",
+    "author_email": "",
+    "version": "0.9.2",
+    "spec_version": "1.2.0",
+    "dependencies": {
+        "public/source-code": "*"
+    },
+    "type": "commit",
+    "output": {
+        "type": "json"
+    },
+    "deterministic": true
+}
