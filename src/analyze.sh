@@ -7,6 +7,6 @@ OUTPUT_FILE="/analysis/output/output.json"
 RULES="DUO"
 
 RESULTS=$(flake8 --select=$RULES --format=json --exit-zero $CODE_DIR)
-SCHEMA_RESULTS=$(echo -n $RESULTS | python -c 'import sys, json; print(json.dumps({"results": [{"check_id": "dlint", "path": k, "extra": {"output": v}} for k, v in json.load(sys.stdin).items() if v]}))')
+SCHEMA_RESULTS=$(echo -n $RESULTS | python schema.py)
 
 echo $SCHEMA_RESULTS > $OUTPUT_FILE
