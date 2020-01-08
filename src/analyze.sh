@@ -7,6 +7,6 @@ OUTPUT_FILE="/analysis/output/output.json"
 RULES="DUO"
 
 RESULTS=$(flake8 --select=$RULES --format=json --exit-zero $CODE_DIR)
-SCHEMA_RESULTS=$(echo -n $RESULTS | python schema.py)
+SCHEMA_RESULTS=$(echo -n $RESULTS | python /analyzer/schema.py $CODE_DIR)
 
 echo $SCHEMA_RESULTS > $OUTPUT_FILE
