@@ -8,7 +8,7 @@ RUN groupadd -r analysis && \
 USER analysis
 
 ENV PATH "${PATH}:/home/analysis/.local/bin"
-RUN python -m pip install --user dlint==0.9.2 flake8-json==19.8.0
+RUN python -m pip install --user dlint==0.10.1 flake8-json==19.8.0
 COPY src /analyzer
 
 # Setup entrypoint into the analysis code logic
